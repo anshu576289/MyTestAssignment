@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: ed28a23c41fb59d4d63121c777b91c4a802cf565
+PODS:
+  - Network (0.1.0)
+
+DEPENDENCIES:
+  - Network (from `DevPods/Network`)
+
+EXTERNAL SOURCES:
+  Network:
+    :path: DevPods/Network
+
+SPEC CHECKSUMS:
+  Network: 3608a755555d1597190a9ab54dd49b8cb6f6b95c
+
+PODFILE CHECKSUM: 807b5030a621308106c9f0bd32ca2682f76073f9
 
 COCOAPODS: 1.11.3

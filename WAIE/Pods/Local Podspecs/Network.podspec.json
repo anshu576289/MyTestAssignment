@@ -1,0 +1,23 @@
+{
+  "name": "Network",
+  "version": "0.1.0",
+  "summary": "A short description of Network.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/anshu/Network",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "anshu": "anshu.official1905@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/anshu/Network.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": "Network/Module/**/*.{swift}",
+  "resources": "Network/Module/**/*.{xcassets,json,storyboard,xib,xcdatamodeld}"
+}

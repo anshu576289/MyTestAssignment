@@ -3,10 +3,24 @@ platform :ios, '14.0'
 workspace 'WAIE.xcworkspace'
 project 'WAIE.xcodeproj'
 
+def networking_pod
+     pod 'Network', :path => 'DevPods/Network'
+end
+
+def development_pods
+    networking_pod
+end
+
 target 'WAIE' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for WAIE
+  development_pods
+end
 
+target 'Network_Example' do
+   use_frameworks!
+   project 'DevPods/Network/Example/Network.xcodeproj'
+   networking_pod
 end

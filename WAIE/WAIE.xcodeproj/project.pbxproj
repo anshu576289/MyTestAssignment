@@ -11,6 +11,8 @@
 		69A291EF29955F9700898782 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A291EE29955F9700898782 /* ContentView.swift */; };
 		69A291F129955F9800898782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A291F029955F9800898782 /* Assets.xcassets */; };
 		69A291F429955F9800898782 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A291F329955F9800898782 /* Preview Assets.xcassets */; };
+		69A291FD2995681F00898782 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A291FC2995681F00898782 /* APIEndpoints.swift */; };
+		69A291FF29956E3F00898782 /* AstronomyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A291FE29956E3F00898782 /* AstronomyViewModel.swift */; };
 		AE14291597DE874DB815E522 /* Pods_WAIE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03939ED099B63B4A2AADFB56 /* Pods_WAIE.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +24,9 @@
 		69A291EE29955F9700898782 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		69A291F029955F9800898782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69A291F329955F9800898782 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69A291FC2995681F00898782 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		69A291FE29956E3F00898782 /* AstronomyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyViewModel.swift; sourceTree = "<group>"; };
+		69A2920029957B4700898782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F55778E6533DDA50A6C66E1D /* Pods-WAIE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WAIE.release.xcconfig"; path = "Target Support Files/Pods-WAIE/Pods-WAIE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,10 +71,13 @@
 		69A291EB29955F9700898782 /* WAIE */ = {
 			isa = PBXGroup;
 			children = (
+				69A2920029957B4700898782 /* Info.plist */,
 				69A291EC29955F9700898782 /* WAIEApp.swift */,
 				69A291EE29955F9700898782 /* ContentView.swift */,
 				69A291F029955F9800898782 /* Assets.xcassets */,
 				69A291F229955F9800898782 /* Preview Content */,
+				69A291FC2995681F00898782 /* APIEndpoints.swift */,
+				69A291FE29956E3F00898782 /* AstronomyViewModel.swift */,
 			);
 			path = WAIE;
 			sourceTree = "<group>";
@@ -88,7 +96,6 @@
 				42C88388F347B424A1F11D5D /* Pods-WAIE.debug.xcconfig */,
 				F55778E6533DDA50A6C66E1D /* Pods-WAIE.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,7 @@
 				69A291E529955F9700898782 /* Sources */,
 				69A291E629955F9700898782 /* Frameworks */,
 				69A291E729955F9700898782 /* Resources */,
+				950616B0CA73DFA0A32B2B18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +167,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		950616B0CA73DFA0A32B2B18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WAIE/Pods-WAIE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WAIE/Pods-WAIE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WAIE/Pods-WAIE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A0C233721A4E1BC34D2D11CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,8 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A291FF29956E3F00898782 /* AstronomyViewModel.swift in Sources */,
 				69A291EF29955F9700898782 /* ContentView.swift in Sources */,
 				69A291ED29955F9700898782 /* WAIEApp.swift in Sources */,
+				69A291FD2995681F00898782 /* APIEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WAIE/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WAIE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,6 +379,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WAIE/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WAIE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
